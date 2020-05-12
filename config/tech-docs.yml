@@ -40,5 +40,5 @@ github_repo: alphagov/govuk-frontend-docs
 
 # Redirects
 redirects:
-  /installing-from-dist/index.html: https://frontend.design-system.service.gov.uk/install-by-copying-files/
+  /installing-from-dist/index.html: https://frontend.design-system.service.gov.uk/install-using-precompiled-files/
 
