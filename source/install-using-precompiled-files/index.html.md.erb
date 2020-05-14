@@ -5,9 +5,9 @@ weight: 10
 
 # Install using precompiled files
 
-You can install GOV.UK Frontend by copying our CSS, JavaScript and asset files into your project.
+You can install GOV.UK Frontend by copying our CSS, JavaScript and asset files into your project. If you install this way, you can try GOV.UK Frontend in your application without having to make many changes.
 
-<%= warning_text('We recommend <a href="/installing-with-npm/">installing with Node.js package manager (npm)</a> instead.
+<%= warning_text('In your live application, you should <a href="/installing-with-npm/">install with Node.js package manager (npm)</a> instead.
 ') %>
 
 ## What you cannot do
@@ -23,9 +23,9 @@ You will not be able to:
 
 1. Download the `release-<VERSION-NUMBER>.zip` file at the bottom of the [latest GOV.UK Frontend release note](https://github.com/alphagov/govuk-frontend/releases/latest).
 2. Unzip the zip file.
-3. Copy the 2 `.css` files to `<YOUR-APP>/stylesheets`.
-3. Copy the `.js` file to `<YOUR-APP>/javascript`.
-4. Copy the `assets` folder to the root of your project’s public folder, so that for example `<YOUR-SITE-URL>/assets/govuk-logotype-crown.png` will work in your users’ browsers.
+3. Copy the `assets` folder to the root of your project’s public folder, so that for example `<YOUR-SITE-URL>/assets/govuk-logotype-crown.png` will work in your users’ browsers.
+4. Copy the 2 `.css` files to a stylesheets folder in the root of your project’s public folder, so that for example `<YOUR-SITE-URL>/stylesheets/govuk-frontend-<VERSION-NUMBER>.min.css` will work in your users’ browsers.
+5. Copy the `.js` file to a JavaScript folder in the root of your project’s public folder, so that for example `<YOUR-SITE-URL>/javascript/govuk-frontend-<VERSION-NUMBER>.min.js` will work in your users’ browsers.
 
 ## Check it works
 
@@ -35,7 +35,7 @@ You will not be able to:
     <!DOCTYPE html>
     <html lang="en" class="govuk-template ">
       <head>
-        <title>Example if you’ve installed GOV.UK Frontend using precompiled files</title>
+        <title>Example - GOV.UK</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <!--[if !IE 8]><!-->
           <link rel="stylesheet" href="/stylesheets/govuk-frontend-<VERSION-NUMBER>.min.css">
@@ -65,7 +65,7 @@ You will not be able to:
 
 4. Replace `<!-- component HTML -->` with the accordion HTML you copied.
 
-5. Run your application and check it works the same way as the Design System accordion example, by selecting the buttons and checking the accordion shows and hides sections.
+5. Run your application and check it works the same way as the [Design System accordion example](https://design-system.service.gov.uk/components/accordion/default/index.html), by selecting the buttons and checking the accordion shows and hides sections.
 
 You can now get the full code for page layouts and other components from the [Design System website](https://design-system.service.gov.uk/).
 
